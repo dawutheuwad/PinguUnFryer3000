@@ -49,7 +49,7 @@ def PinguUnfry():
     for i in range(5):
         print("Working, Please Wait...")
         time.sleep(3)
-    print("DONE! UNFRYING PINGU ENDED WITH SUCCESS!!! (Code: 0x0)")
+    print("DONE! UNFRYING PINGU ENDED SUCCESSFULLY!!! (Code: 0x0)")
     time.sleep(3)
     exit()
           
