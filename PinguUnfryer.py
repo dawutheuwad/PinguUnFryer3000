@@ -43,7 +43,7 @@ def Pingu():
     else:
         ProgramKill3()
 
-def StopFry()
+def StopFry():
     print("Stopping the frying process. Please wait...")
     time.sleep(1)
     for i in range(5):
