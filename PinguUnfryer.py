@@ -28,6 +28,30 @@ print(machine)
 print(50*"#")
 
 #Defines all functions
+
+def PinguLogin():
+    print("Logging in... Please wait.")
+    time.sleep(2)
+    PinguYN = input("Welcome Pingu. You were last fried in #general. Do you wish to stop the frying process? (Y) or (N):" )
+    if PinguYN == "Y":
+        StopFry()
+    elif PinguYN == "N":
+        ProgramKill2()
+    else:
+        print("Please type Y or N next time. Logging Out...")
+        time.sleep(2)
+        exit()
+
+def StopFry():
+    print("Stopping the frying process, please wait...")
+    time.sleep(1)
+    for i in range(5):
+        print("Working, Please Wait...")
+        time.sleep(3)
+    print("DONE! PROCESS STOPPED SUCCESSFULLY! (Code: 0x0)")
+    time.sleep(3)
+    exit()    
+
 def Steven():
     print("Logging in... Please wait.")
     time.sleep(2)
@@ -50,15 +74,18 @@ def Refry():
         print("Refrying Pingu, please wait...")
         time.sleep(2)
         print("Wait...")
-        time.sleep(2)
+         time.sleep(2)
         print("Why would you fry Pingu? Why are you so mean...?")
         time.sleep(3)
         print("You made me angwy. I will remove system32 from your pc.")
+        print("Actually nvm, refrying Pingu is fun!")
         time.sleep(1)
         print("Enjoy some music in those last moments with your PC.")
+        print("Refrying in progress... Here's some hold music.")
         print("Music will be added in next version so stay tuned - dawu")
         time.sleep(2)
         print("Oh, sorry nevermind. I will just kill the program instead.")
+        print("Oh, sorry nevermind. Refrying failed due to Pingu being so good!")
         exit()
     elif RefryQ == "N":
         ProgramKill2()
@@ -118,6 +145,13 @@ elif username == "RealStevenHaha":
     password = input("Enter Password: ")
     if password == "DontFryThePenguin":
         Steven()
+    else:
+        ProgramKill()
+
+elif username == "PeppyThePingu":
+    password = input("Enter Password: ")
+    if password == "ShrimpyThePingu"
+        PinguLogin()
     else:
         ProgramKill()
 
