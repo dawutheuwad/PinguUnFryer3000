@@ -8,6 +8,7 @@ import sys
 banner = pyfiglet.figlet_format("Pingu Un-Fryer 3000")
 bannerwelcome = pyfiglet.figlet_format("Welcome Space")
 bannersteven = pyfiglet.figlet_format("Welcome Steven")
+bannerpingu = pyfiglet.figlet_format("Welcome Pingu")
 hour = randint(0,24)
 minute = randint(0,59)
 system = platform.system()
@@ -28,6 +29,30 @@ print(machine)
 print(50*"#")
 
 #Defines all functions
+def Pingu():
+    print("Logging in... Please wait.")
+    time.sleep(2)
+    print(50*"#")
+    print(bannerpingu)
+    print(50*"#")
+    PinguQ = input("Welcome Pingu. You are being fried in #general. Do you wish to stop the frying process? (Y/N):")
+    if PinguQ == "Y":
+        StopFry()
+    elif PinguQ == "N":
+        ProgramKill2()
+    else:
+        ProgramKill3()
+
+def StopFry():
+    print("Stopping the frying process. Please wait...")
+    time.sleep(1)
+    for i in range(5):
+        print("Working, Please Wait...")
+        time.sleep(3)
+    print("Process Stopped Successfully. (Code: 0x0)")
+    time.sleep(3)
+    exit()
+
 def Steven():
     print("Logging in... Please wait.")
     time.sleep(2)
@@ -40,9 +65,7 @@ def Steven():
     elif StevenYN == "R":
         Refry()
     else:
-        print("Please type U or R next time. Logging Out...")
-        time.sleep(2)
-        exit()
+        ProgramKill3()
         
 def Refry():
     RefryQ = input("Do you really want to deep re-fry Pingu? (Y/N)? ")
@@ -59,6 +82,7 @@ def Refry():
         print("Music will be added in next version so stay tuned - dawu")
         time.sleep(2)
         print("Oh, sorry nevermind. I will just kill the program instead.")
+        time.sleep(2)
         exit()
     elif RefryQ == "N":
         ProgramKill2()
@@ -120,6 +144,17 @@ elif username == "RealStevenHaha":
         Steven()
     else:
         ProgramKill()
+elif username == "PeppyThePingu":
+    password = input("Enter Password: ")
+    if password == "ShrimpyThePingu":
+        Pingu()
+    else:
+        ProgramKill()
+
+else:
+    print("Wrong Username!")
+    time.sleep(2)
+    exit()
 
 
 
