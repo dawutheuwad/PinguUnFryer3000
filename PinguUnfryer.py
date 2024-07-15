@@ -144,6 +144,17 @@ elif username == "RealStevenHaha":
         Steven()
     else:
         ProgramKill()
+elif username == "PeppyThePingu":
+    password = input("Enter Password: ")
+    if password == "ShrimpyThePingu":
+        Pingu()
+    else:
+        ProgramKill()
+
+else:
+    print("Wrong Username!")
+    time.sleep(2)
+    exit()
 
 elif username == "PeppyThePingu":
     password = input("Enter Password: ")
